@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Gallery from './components/Gallery'
-import SearchBar from './components/SearchBar'
+import Searchbar from './components/Searchbar'
 import AlbumView from './components/AlbumView'
 import ArtistView from './components/ArtistView'
 import { Fragment } from 'react'
@@ -41,7 +41,7 @@ return (
             <Routes>
                 <Route path="/" element={
                     <Fragment>
-                        <SearchBar handleSearch = {handleSearch}/>
+                        <Searchbar handleSearch = {handleSearch}/>
                         <Gallery data={data} />
                     </Fragment>
                 } />
